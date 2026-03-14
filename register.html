@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Patient Registration</title>
+<link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+<nav class="navbar">
+<div class="logo">🧑‍⚕️MedAppoint🩺</div>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="doctors.html">Doctors</a></li>
+<li><a href="payment.html">Payment</a></li>
+</ul>
+</nav>
+<div class="register-box">
+
+<h2>🧾 New Patient Registration</h2>
+
+<label>Full Name</label>
+<input id="name" type="text" placeholder="Enter Full Name">
+
+<label>Phone Number</label>
+<input id="phone" type="tel" placeholder="Enter 10 Digit Mobile Number">
+
+<label>Date of Birth</label>
+<input id="dob" type="date">
+
+<label>District</label>
+<select id="district">
+<option value="">Select District</option>
+<option>Chennai</option>
+<option>Madurai</option>
+<option>Coimbatore</option>
+<option>Salem</option>
+</select>
+
+<button onclick="registerUser()">Register</button>
+
+</div>
+<footer class="footer">
+
+<p>© 2026 MedAppoint Hospital | All Rights Reserved</p>
+
+</footer>
+<script src="js/register.js"></script>
+
+</body>
+</html>

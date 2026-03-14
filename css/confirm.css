@@ -1,0 +1,83 @@
+body{
+font-family:Arial;
+margin:0;
+text-align:center;
+color:rgb(18,17,17);
+/* hospital background image */
+background:url("https://plus.unsplash.com/premium_photo-1673953509975-576678fa6710?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGRvY3RvcnN8ZW58MHx8MHx8fDA%3D") no-repeat center/cover;
+min-height:100vh;
+}
+
+/* overlay for readability */
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.45);
+z-index:-1;
+}
+
+/* navbar */
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#0a66c2;
+}
+
+.logo{
+color:white;
+padding-bottom:30px;
+font-size:20px;
+font-weight:bold;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:20px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+}
+
+/* confirm box */
+.confirm-box{
+width:350px;
+margin:120px auto;
+background:white;
+padding:30px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.confirm-box button{
+padding:12px 25px;
+background:#28a745;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+margin-top:20px;
+}
+
+.confirm-box button:hover{
+background:#1e7e34;
+}
+
+.footer{
+background:#0a66c2;
+color:white;
+text-align:center;
+padding:15px;
+position:fixed;
+bottom:0;
+width:100%;
+}

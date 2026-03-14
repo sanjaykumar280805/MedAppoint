@@ -1,0 +1,123 @@
+/* reset */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* body background hospital style */
+body{
+font-family: 'Segoe UI', Arial, sans-serif;
+background:
+linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+url("https://images.unsplash.com/photo-1587351021759-3e566b6af7cc");
+background-size:cover;
+background-position:center;
+min-height:100vh;
+}
+
+/* navbar */
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#0a66c2;
+}
+
+/* logo */
+.logo{
+color:white;
+font-size:22px;
+font-weight:bold;
+}
+
+/* nav links container */
+.nav-links{
+list-style:none;
+display:flex;
+align-items:center;
+gap:25px;
+margin:0;
+padding:0;
+}
+
+/* links */
+.nav-links a{
+color:white;
+text-decoration:none;
+font-weight:500;
+font-size:16px;
+}
+
+/* hover */
+.nav-links a:hover{
+color:#dff3ff;
+}
+
+/* payment box */
+.paybox{
+text-align:center;
+background:white;
+width:350px;
+padding:40px;
+border-radius:14px;
+margin:120px auto;
+box-shadow:0 15px 35px rgba(0,0,0,0.3);
+animation:fadeIn 0.6s ease;
+}
+
+/* heading */
+.paybox h2{
+margin-bottom:20px;
+color:#0f6cbd;
+}
+
+/* inputs */
+.paybox input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:6px;
+border:1px solid #ccc;
+font-size:14px;
+}
+
+/* button */
+.paybox button{
+width:100%;
+padding:12px;
+background:#28a745;
+color:white;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.paybox button:hover{
+background:#1e7e34;
+}
+
+/* animation */
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.footer{
+background:#0a66c2;
+color:white;
+text-align:center;
+padding:15px;
+position:fixed;
+bottom:0;
+width:100%;
+}

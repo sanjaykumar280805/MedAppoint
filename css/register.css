@@ -1,0 +1,118 @@
+/* reset */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+/* body */
+body{
+font-family:'Segoe UI', Arial, sans-serif;
+background:
+linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+url("https://images.unsplash.com/photo-1579684385127-1ef15d508118");
+background-size:cover;
+background-position:center;
+min-height:100vh;
+}
+
+/* navbar */
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 50px;
+background:#0f6cbd;
+}
+
+.logo{
+color:white;
+font-size:22px;
+font-weight:600;
+}
+
+/* nav links */
+.nav-links{
+list-style:none;
+display:flex;
+gap:25px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+font-size:17px;
+}
+
+/* register box */
+.register-box{
+width:420px;
+margin:100px auto;
+background:white;
+padding:40px;
+border-radius:14px;
+box-shadow:0 15px 35px rgba(0,0,0,0.3);
+}
+
+/* heading */
+.register-box h2{
+text-align:center;
+margin-bottom:25px;
+color:#0f6cbd;
+font-size:25px;
+}
+
+/* labels */
+.register-box label{
+display:block;
+font-size:18px;
+margin-top:15px;
+}
+
+/* inputs */
+.register-box input,
+.register-box select{
+width:100%;
+padding:14px;
+margin-top:8px;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:18px;
+}
+
+/* button */
+.register-box button{
+width:100%;
+padding:16px;
+margin-top:25px;
+font-size:20px;
+background:#28a745;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.register-box button:hover{
+background:#1e7e34;
+}
+
+/* mobile responsive */
+@media(max-width:500px){
+
+.register-box{
+width:90%;
+padding:30px;
+}
+
+}
+
+.footer{
+background:#0a66c2;
+color:white;
+text-align:center;
+padding:15px;
+position:fixed;
+bottom:0;
+width:100%;
+}
